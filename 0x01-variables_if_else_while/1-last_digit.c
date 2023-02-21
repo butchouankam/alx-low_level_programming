@@ -33,7 +33,7 @@ int main(void)
 	{
 		if (ld != 0)
 			printf("less than 6 and not ");
-		printf("0");
+		printf("0\n");
 	}
 	return (0);
 }
