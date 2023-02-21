@@ -12,7 +12,7 @@
  *  followed by the string "is", followed by the said digit, followed by:
  *  - if the last digit of n is greater than 5: "and is greater than 5"
  *  - if the last digit of n is 0: "and is O"
- *  - if the last digit of n is less than 6 and not 0: "and is less that 6 and not 0"
+ *  - if it is less than 6 and not 0: "and is less that 6 and not 0"
  *  followed by a new line.
  *  Return: O to signal good execution
  */
@@ -31,9 +31,9 @@ int main(void)
 	}
 	else
 	{
-		if (ld > 0)
+		if (ld != 0)
 			printf("less than 6 and not ");
-		printf("0\n");
+		printf("0");
 	}
 	return (0);
 }
