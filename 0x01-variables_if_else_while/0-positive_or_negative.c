@@ -8,11 +8,12 @@
  *
  * Description: The variable n will store a different value everytime
  * you run the program. The output of the program should be:
- * 	- the number followed by
- * 		* if the number is greater than zero: is positive
- * 		* if the number is 0: is zero
- * 		* if the number is less than zero: is negative
- * 	- followed by a new line
+ *	- the number followed by
+ *		* if the number is greater than zero: is positive
+ *		* if the number is 0: is zero
+ *		* if the number is less than zero: is negative
+ *	- followed by a new line
+ * Return: O to signal good execution
  */
 int main(void)
 {
@@ -21,7 +22,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	printf("%d ",n);
+	printf("%d ", n);
 	if (n > 0)
 	{
 		printf("is positive");
@@ -33,5 +34,6 @@ int main(void)
 		else
 			printf("is zero");
 	}
+	printf("\n");
 	return (0);
 }
