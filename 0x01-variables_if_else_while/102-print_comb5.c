@@ -27,11 +27,11 @@ int main(void)
 	/* Statements */
 	for (n1d1 = 48; n1d1 < 58; n1d1++)
 	{
-		for (n1d0 = n1d1; n1d0 < 57; n1d0++)
+		for (n1d0 = 48; n1d0 < 58; n1d0++)
 		{
-			for (n2d1 = n1d1; n2d1 < 58; n2d1++)
+			for (n2d1 = 48; n2d1 < 58; n2d1++)
 			{
-				for (n2d0 = n1d0; n2d0 < 58; n2d0++)
+				for (n2d0 = 48; n2d0 < 58; n2d0++)
 				{
 					if (((n1d1 == n2d1) && (n1d0 < n2d0)) || (n2d1 > n1d1))
 					{
