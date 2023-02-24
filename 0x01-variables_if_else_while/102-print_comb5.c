@@ -31,7 +31,7 @@ int main(void)
 		{
 			for (n2d1 = n1d1; n2d1 < 58; n2d1++)
 			{
-				for (n2d0 = n1d0; n2d0 < 58; n2d0++)
+				for (n2d0 = 48; n2d0 < 58; n2d0++)
 				{
 					if (((n1d1 == n2d1) && (n1d0 < n2d0)) || (n2d1 > n1d1))
 					{
@@ -40,7 +40,7 @@ int main(void)
 						putchar(32);
 						putchar(n2d1);
 						putchar(n2d0);
-						if ((n1d1 != 57) && (n1d0 != 56))
+						if (!((n1d1 = 57) && (n1d0 = 56)))
 						{
 							putchar(44);
 							putchar(32);
