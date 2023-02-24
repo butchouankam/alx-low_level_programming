@@ -31,17 +31,20 @@ int main(void)
 		{
 			for (n2d1 = n1d1; n2d1 < 58; n2d1++)
 			{
-				for (n2d0 = n1d0 + 1; n2d0 < 57; n2d0++)
+				for (n2d0 = n1d0; n2d0 < 58; n2d0++)
 				{
-					putchar(n1d1);
-					putchar(n1d0);
-					putchar(32);
-					putchar(n2d1);
-					putchar(n2d0);
-					if ((n1d1 != 57) && (n1d0 != 56))
+					if (((n1d1 == n2d1) && (n1d0 < n2d0)) || (n2d1 > n1d1))
 					{
-						putchar(44);
+						putchar(n1d1);
+						putchar(n1d0);
 						putchar(32);
+						putchar(n2d1);
+						putchar(n2d0);
+						if ((n1d1 != 57) && (n1d0 != 56))
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 				}
 			}
@@ -50,5 +53,4 @@ int main(void)
 	putchar(10);
 
 	return (0);
-
 }
