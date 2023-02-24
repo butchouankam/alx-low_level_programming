@@ -28,7 +28,7 @@ int main(void)
 			{
 				putchar(d2);
 				putchar(d1);
-				putchar(d3);
+				putchar(d0);
 				if (d2 != 55)
 				{
 					putchar(44);
