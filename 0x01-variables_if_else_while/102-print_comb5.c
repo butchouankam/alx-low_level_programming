@@ -23,30 +23,26 @@ int main(void)
 	/* Declarations */
 	int n1d1, n1d0;/* number one digits for 10^1 and 10^0 */
 	int n2d1, n2d0;/* number two digits for 10^1 and 10^0 */
+	int i, j; /* counters */
 
 	/* Statements */
-	for (n1d1 = 48; n1d1 < 58; n1d1++)
+	for (i = 0; i < 99; i++)
 	{
-		for (n1d0 = 48; n1d0 < 57; n1d0++)
+		for (j = i + 1; j < 100; j++)
 		{
-			for (n2d1 = n1d1; n2d1 < 58; n2d1++)
+			n1d1 = 48 + i / 10;
+			n1d0 = 48 + i % 10;
+			n2d1 = 48 + j / 10;
+			n2d0 = 48 + j % 10;
+			putchar(n1d1);
+			putchar(n1d0);
+			putchar(32);
+			putchar(n2d1);
+			putchar(n2d0);
+			if (!(i == 98))
 			{
-				for (n2d0 = 48; n2d0 < 58; n2d0++)
-				{
-					if (((n1d1 == n2d1) && (n1d0 < n2d0)) || (n2d1 > n1d1))
-					{
-						putchar(n1d1);
-						putchar(n1d0);
-						putchar(32);
-						putchar(n2d1);
-						putchar(n2d0);
-						if (!((n1d1 = 57) && (n1d0 = 56)))
-						{
-							putchar(44);
-							putchar(32);
-						}
-					}
-				}
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
