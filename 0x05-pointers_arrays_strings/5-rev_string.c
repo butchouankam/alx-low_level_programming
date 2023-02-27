@@ -21,7 +21,7 @@ void rev_string(char *s)
 	}
 	if (i > 1)
 	{
-		for (j = O; j < i; j++)
+		for (j = 0; j < i; j++)
 		{
 			*(s + j) = *(tmp + (i - 1 - j));
 		}
