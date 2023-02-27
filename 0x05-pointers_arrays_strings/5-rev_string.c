@@ -10,20 +10,21 @@ void rev_string(char *s)
 {
 	/* Declarations */
 	int i, j;
-	char *tmp;
+	char tmp;
 
 	/* Statements */
 	i = 0;
 	while (*(s + i) != '\0')
 	{
-		*(tmp + i) = *(s + i);
 		i++;
 	}
 	if (i > 1)
 	{
 		for (j = 0; j < i; j++)
 		{
-			*(s + j) = *(tmp + (i - 1 - j));
+			tmp = *(s + j);
+			*(s + j) = *(s + (i - 1 - j));
+			*(s + (i - 1 - j)) = tmp;
 		}
 	}
 }
