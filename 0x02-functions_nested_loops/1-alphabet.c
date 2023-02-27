@@ -6,12 +6,14 @@
 void print_alphabet(void)
 {
 	/* Declarations */
-	int i;
+	char c
 
 	/* Statements */
-	for (i = 0; i < 26; i++)
+	while (c <= 'z')
 	{
-		_putchar('a' + i);
+		c_putchar(c);
+		c++;
+		(char)c;
 	}
 	_putchar('\n');
 }
