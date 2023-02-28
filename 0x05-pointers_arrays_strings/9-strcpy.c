@@ -6,7 +6,7 @@
  *
  * Return: the pointer dest.
  */
-void _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	/* Declarations */
 	int i;
