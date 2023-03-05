@@ -13,7 +13,7 @@ void _putchar(char *c);
 char *_strcat(char *dest, char *src)
 {
 	/* Declarations */
-	int idst, iscr; /* indexes */
+	int idst, isrc; /* indexes */
 
 	/* Statements */
 	idst = 0;
